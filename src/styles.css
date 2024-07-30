@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+:root {
+  /* colors */
+  --green: hsl(75, 94%, 57%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+
+  /* fonts */
+
+  --font-primary: "Inter", sans-serif;
+
+  /* font weights */
+
+  --font-regular: 400;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  /* font sizes */
+
+  --font-300: 1rem;
+
+  /* spacing */
+
+  --space-100: 0.5rem;
+  --space-200: 1rem;
+  --space-300: 2rem;
+  --space-400: 3rem;
+  --space-700: 16rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-weight: var(--font-regular);
+  font-size: var(--font-300);
+  background-color: var(--grey-900);
+  color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-200);
+  border-radius: var(--space-200);
+  padding: var(--space-400);
+  background-color: var(--grey-800);
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  padding-bottom: var(--space-200);
+}
+
+img {
+  border-radius: var(--space-700);
+  width: 100px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-100);
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  font-weight: var(--font-semibold);
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  color: var(--green);
+  font-weight: var(--font-semibold);
+}
+
+.bio {
+  display: flex;
+  justify-content: center;
+  padding-top: var(--space-200);
+}
+
+.buttons {
+  display: flex;
+  gap: var(--space-200);
+  flex-direction: column;
+  padding-top: var(--space-200);
+}
+
+button {
+  color: white;
+  background-color: var(--grey-700);
+  border: 0;
+  font-family: var(--font-primary);
+  font-weight: var(--font-semibold);
+  padding: var(--space-200);
+  border-radius: var(--space-100);
+}
+
+button:hover {
+  color: var(--grey-900);
+  font-weight: var(--font-bold);
+
+  cursor: pointer;
+  background-color: var(--green);
+}
